@@ -1,9 +1,9 @@
 {
-  "id": "plugin.com.TzuLao.deepseek",
+  "id": "plugin.com.Erenind.deepseek",
   "plugin_type": "translate",
   "icon": "deepseek.svg",
   "display": "deepseek",
-  "homepage": "https://github.com/tzulao55/pot-app-translate-plugin-deepseek",
+  "homepage": "https://github.com/erenind/pot-app-translate-plugin-deepseek",
   "needs": [
     {
       "key": "model",
@@ -19,6 +19,38 @@
       "key": "apiKey",
       "display": "API密钥",
       "type": "input"
+    },
+    {
+      "key": "usages",
+      "display": "单词信息",
+      "type": "select",
+      "options": {
+        "full": "完整信息(发音/释义/用法)",
+        "basic": "基本用法",
+        "none": "不显示"
+      },
+      "default": "完整信息(发音/释义/用法)"
+    },
+    {
+      "key": "hyphenMode",
+      "display": "连字符短语模式",
+      "type": "select",
+      "options": {
+        "on": "启用(-标识/连接短语,如-make-up)",
+        "off": "禁用"
+      },
+      "default": "启用(-标识/连接短语,如-make-up)"
+    },
+    {
+      "key": "phraseUsages",
+      "display": "短语信息",
+      "type": "select",
+      "options": {
+        "full": "详细",
+        "basic": "基本解释",
+        "none": "仅翻译"
+      },
+      "default": "详细"
     }
   ],
   "language": {

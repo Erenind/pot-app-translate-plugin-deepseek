@@ -9,23 +9,23 @@
     - 释义：动词短语、固定搭配、例句
     - 用法：常见搭配、例句
 - 解释的程度可选：简略、详细
-- 句子翻译
-- 优化显示,你不会看到markdown的语法标识符:\*\*\*\*（表示加粗）、 \-（无序列表）、\# 标题 和 \=\= 高亮
+- 专业、流畅的句子翻译
+- 优化显示,你不会看到markdown的语法标识符:\*\*（表示加粗）、 \-（无序列表）、\# 标题 和 \=\= 高亮
 
-作者感受：堪比牛津字典,但在读音指导方面胜过牛津字典,在用法方面的显示上比牛津字典更加简略易懂好记。
+作者感受：堪比牛津字典，但在读音指导方面胜过牛津字典，在用法方面的显示上比牛津字典更加简略易懂好记。
 
 
 ### 效果展示
 单词/详细
-![单词/详细](star.png)
+![单词/详细](screenshots/star.png)
 单词/简略
-![单词/简略](star2.png)
+![单词/简略](screenshots/star2.png)
 短语/详细
-![短语/详细](make-it.png)
+![短语/详细](screenshots/make-it.png)
 短语/简略
-![短语/简略](make-it2.png)
+![短语/简略](screenshots/make-it2.png)
 句子翻译
-![句子](sentence.png)
+![句子](screenshots/sentence.png)
 
 ### 缺点
 - 等待时间过长:3~30秒左右
@@ -41,20 +41,20 @@
 ### 感谢
 感谢[Tzulao55](https://github/Tzulao55/pot-app-translate-plugin-deepseek)提供模板。
 
+### 短语识别说明
+在设置中打开`练字符短语模式`后，要查短语时，需要在短语的开头添加-(英文)并连接短语的各个词,如：-make-up、-take-off、-eat-up等。
+
+
 ## 前置要求
 - [pot-app](https://github.com/pot-app/pot-app) - 请先下载并安装pot-app
 - [deepseek API开放平台](https://platform.deepseek.com/usage)- 需要在DeepSeek官网申请API密钥
-
-## 功能特点
-- 支持两种模型选择：deepseek-chat和deepseek-reasoner
-- 支持多种语言之间的互译
-- 提供专业、流畅的翻译结果
 
 ## 安装方法
 1. 在pot-app中点击"偏好设置"
 2. 选择"服务设置"
 3. 点击"翻译-添加外部插件"
-4. 选择本插件的发布包进行安装
+4. 选择本插件的发布包(potext文件)进行安装
+
 
 ## 配置说明
 1. 选择翻译模型（deepseek-chat或deepseek-reasoner）

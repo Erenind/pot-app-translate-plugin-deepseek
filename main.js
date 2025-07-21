@@ -99,8 +99,14 @@ async function translate(text, from, to, options) {
             .replace(/^"|"$/g, '')
             .replace(/\*/g, '')
             .replace(/^(\s*)-(?=\s)/gm, '$1•')
-            .replace(/#+\s*/g, '')
-            .replace(/==(.*?)==/g, '$1');
+            .replace(/^#+\s*/g, '')
+            .replace(/\*(.*?)\*/g, '$1')
+            .replace(/~~(.*?)~~/g, '$1')
+            .replace(/```[\s\S]*?```/g, '')
+            .replace(/`(.*?)`/g, '$1')
+            .replace(/!\[.*?\]\(.*?\)/g, '')
+            .replace(/==(.*?)==/g, '$1')
+            .replace(/^-{3,}\s*$/gm, '');
     } else {
         throw `Http Request Error\nHttp Status: ${res.status}\n${JSON.stringify(res.data)}`;
     }

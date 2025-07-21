@@ -25,22 +25,7 @@ async function translate(text, from, to, options) {
 
     // 根据是否为单词和配置决定系统提示
     let systemPrompt;
-    if (isWord) {
-        switch (usages) {
-            case "basic":
-                systemPrompt = "You are a professional translation engine. First translate the word into a colloquial, professional, elegant and fluent content, without the style of machine translation. Then provide common usages and examples of this word in sentences. You must translate the word content first, then provide usages.";
-                break;
-            case "full":
-                systemPrompt = "You are a professional translation engine. Please provide detailed information about this word including:\n" +
-                    "1. Pronunciation: Correct pronunciation including stress, phonetic symbols, linking sounds, weak forms, and silent letters\n" +
-                    "2. Meaning: Chinese translation and different parts of speech (noun, verb, adjective etc.) with multiple meanings\n" +
-                    "3. Usage: Common collocations, phrases and example sentences\n" +
-                    "Present the information in a clear and organized manner.";
-                break;
-            default: // "none"
-                systemPrompt = "You are a professional translation engine, please translate the word into a colloquial, professional, elegant and fluent content, without the style of machine translation. You must only translate the word content, never interpret it.";
-        }
-    } else if (isPhrase) {
+    if (isPhrase) {
         switch (phraseUsages) {
             case "basic":
                 systemPrompt = "You are a professional translation engine. First translate the phrase into a colloquial, professional, elegant and fluent content. Then provide:\n" +
@@ -58,6 +43,21 @@ async function translate(text, from, to, options) {
                 break;
             default: // "none"
                 systemPrompt = "You are a professional translation engine, please translate the phrase into a colloquial, professional, elegant and fluent content, without the style of machine translation.";
+        }
+    } else if (isWord) {
+        switch (usages) {
+            case "basic":
+                systemPrompt = "You are a professional translation engine. First translate the word into a colloquial, professional, elegant and fluent content, without the style of machine translation. Then provide common usages and examples of this word in sentences. You must translate the word content first, then provide usages.";
+                break;
+            case "full":
+                systemPrompt = "You are a professional translation engine. Please provide detailed information about this word including:\n" +
+                    "1. Pronunciation: Correct pronunciation including stress, phonetic symbols, linking sounds, weak forms, and silent letters\n" +
+                    "2. Meaning: Chinese translation and different parts of speech (noun, verb, adjective etc.) with multiple meanings\n" +
+                    "3. Usage: Common collocations, phrases and example sentences\n" +
+                    "Present the information in a clear and organized manner.";
+                break;
+            default: // "none"
+                systemPrompt = "You are a professional translation engine, please translate the word into a colloquial, professional, elegant and fluent content, without the style of machine translation. You must only translate the word content, never interpret it.";
         }
     } else {
         systemPrompt = "You are a professional translation engine, please translate the text into a colloquial, professional, elegant and fluent content, without the style of machine translation.";

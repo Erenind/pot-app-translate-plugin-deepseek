@@ -46,8 +46,8 @@
       "display": "短语信息",
       "type": "select",
       "options": {
-        "full": "详细",
-        "basic": "基本解释",
+        "full": "详细解释",
+        "basic": "基本用法",
         "none": "仅翻译"
       },
       "default": "详细"

@@ -22,11 +22,11 @@
 - **特色优势**：比牛津词典更易懂的发音指导，更实用的用法解析  
 
 ## ⚡ 快速开始
-1. 安装pot-app ([下载地址](https://github.com/pot-app/pot-app))
-2. 获取DeepSeek API密钥 ([申请地址](https://platform.deepseek.com/usage))
-3. 选择本插件的发布包(potext文件)进行安装([点击下载](https://github.com/Erenind/pot-app-translate-plugin-deepseek/releases/download/v1.0.0/plugin.Erenind.deepseek.potext))
-4. 安装本插件并配置API密钥([配置选项说明](#配置选项说明))
-5. 开始享受专业英语学习体验！
+1. 📥 安装pot-app ([下载地址](https://github.com/pot-app/pot-app))
+2. 🔑 获取DeepSeek API密钥 ([申请地址](https://platform.deepseek.com/usage))
+3. 📦 选择本插件的发布包(potext文件)进行安装([点击下载](https://github.com/Erenind/pot-app-translate-plugin-deepseek/releases/download/v1.0.0/plugin.Erenind.deepseek.potext))
+4. ⚙️ 安装本插件并配置API密钥([配置选项说明](#配置选项说明))
+5. 🎉 开始享受专业英语学习体验！
 
 ## 🖼️ 效果预览
 | 功能 | 示例 |
@@ -44,17 +44,17 @@
 | API密钥 | 文本输入 | 无 | 从DeepSeek平台获取的API密钥 |
 | 单词/短语信息 | 不显示<br> 基本用法<br> 完整信息(发音/释义/用法) | 完整信息(发音/释义/用法) | 控制单词/短语解释详细程度 |
 | 连字符短语模式 | 禁用<br> 启用(-标识/连接短语) | 启用(-标识/连接短语) | 启用后可使用-make-it格式输入短语 |
-| 短语解释模式 | 仅翻译<br> 基本解释<br> 详细 | 详细 | 控制短语解释详细程度 |
+| 短语解释模式 | 仅翻译<br> 基本用法<br> 详细解释 | 详细解释 | 控制短语解释详细程度 |
 
 
-## ⚠️ 注意事项
+## ⚠️ 注意事项 ❗
 - 翻译需要3-30秒等待时间（深度学习需要时间）
 - 建议同时使用其他翻译服务作为备用
 - 请妥善保管你的API密钥
 
-## 插件技术细节
+## 🛠️ 插件技术细节
 
-### 核心功能实现
+### ⚙️ 核心功能实现
 - **单词/短语识别**：
   - 自动检测输入内容类型（单词/短语/句子）
   - 支持连字符模式识别短语（如-make-it → make it）
@@ -83,5 +83,5 @@
     13. 保留URL链接
     14. 保留表格结构
 
-### 开发说明
+### 📝 开发说明
 - 开源协议：MIT License

@@ -12,8 +12,7 @@
       "options": {
         "deepseek-chat": "deepseek-chat",
         "deepseek-reasoner": "deepseek-reasoner"
-      },
-      "default": "deepseek-chat"
+      }
     },
     {
       "key": "apiKey",
@@ -28,8 +27,7 @@
         "full": "完整信息(发音/释义/用法)",
         "basic": "基本用法",
         "none": "仅翻译"
-      },
-      "default": "完整信息(发音/释义/用法)"
+      }
     },
     {
       "key": "hyphenMode",
@@ -38,8 +36,7 @@
       "options": {
         "on": "启用(-标识/连接短语,如-make-up)",
         "off": "禁用"
-      },
-      "default": "启用(-标识/连接短语,如-make-up)"
+      }
     },
     {
       "key": "phraseUsages",
@@ -49,8 +46,78 @@
         "full": "详细解释",
         "basic": "基本用法",
         "none": "仅翻译"
+      }
+    },
+    {
+      "key": "custom_mode",
+      "display": "自定义指令模式",
+      "type": "select",
+      "options": {
+        "on": "启用(可使用///指令>内容格式)",
+        "off": "禁用"
       },
-      "default": "详细"
+      "default": "on"
+    },
+    {
+      "key": "destription",
+      "display": "以下部分的默认值(非必要不用更改):输出随机性(temperature)默认0.1-精准模式(最稳定) \n输出多样性(top_p)默认0.99-广泛采样 \n重复控制(frequency_penalty)默认0-默认平衡 \n内容新颖度(presence_penalty)默认0-平衡模式 \n响应长度(max_tokens)默认2000-详细解释",
+      "type": "destription"
+    },
+    {
+      "key": "temperature",
+      "display": "输出随机性(temperature)",
+      "type": "select",
+      "options": {
+        "0.1": "0.1 - 精准模式(最稳定)",
+        "0.5": "0.5 - 平衡模式",
+        "0.8": "0.8 - 创意模式",
+        "1.2": "1.2 - 高随机性",
+        "1.5": "1.5 - 实验性输出"
+      }
+    },
+    {
+      "key": "top_p",
+      "display": "输出多样性(top_p)",
+      "type": "select",
+      "options": {
+        "0.9": "0.9 - 精准筛选",
+        "0.95": "0.95 - 适度多样",
+        "0.99": "0.99 - 广泛采样",
+        "1.0": "1.0 - 完全开放"
+      }
+    },
+    {
+      "key": "frequency_penalty",
+      "display": "重复控制(frequency_penalty)",
+      "type": "select",
+      "options": {
+        "-1.0": "-1.0 - 允许更多重复",
+        "0": "0 - 默认平衡",
+        "0.5": "0.5 - 减少重复",
+        "1.0": "1.0 - 严格去重"
+      }
+    },
+    {
+      "key": "presence_penalty",
+      "display": "内容新颖度(presence_penalty)",
+      "type": "select",
+      "options": {
+        "-1.0": "-1.0 - 偏好常见内容",
+        "0": "0 - 平衡模式",
+        "0.5": "0.5 - 鼓励新内容",
+        "1.0": "1.0 - 强创新性"
+      }
+    },
+    {
+      "key": "max_tokens",
+      "display": "响应长度(max_tokens)",
+      "type": "select",
+      "options": {
+        "500": "500 - 简短响应",
+        "1000": "1000 - 中等长度",
+        "2000": "2000 - 详细解释",
+        "4000": "4000 - 最大长度"
+      }
     }
   ],
   "language": {

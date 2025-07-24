@@ -37,7 +37,7 @@
 1. 📥 安装pot-app ([下载地址](https://github.com/pot-app/pot-app))
 2. 🔑 获取DeepSeek API密钥 ([申请地址](https://platform.deepseek.com/usage))
 3. 📦 选择本插件的发布包(potext文件)进行安装([点击下载](https://github.com/Erenind/pot-app-translate-plugin-deepseek/releases/download/v2.0.1/plugin.Erenind.deepseek.potext))
-4. ⚙️ 安装本插件并配置API密钥([配置选项说明](#配置选项说明))
+4. ⚙️ 安装本插件并配置API密钥([配置选项说明](#️-配置选项说明))
 5. 🎉 开始享受专业英语学习体验！
 
 ## 🖼️ 效果预览📸

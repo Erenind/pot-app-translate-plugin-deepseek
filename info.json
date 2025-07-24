@@ -24,8 +24,8 @@
       "display": "单词信息",
       "type": "select",
       "options": {
-        "full": "完整信息(发音/释义/用法)",
-        "basic": "基本用法",
+        "full": "详细(发音/释义/用法)",
+        "basic": "简略(用法/例句)",
         "none": "仅翻译"
       }
     },
@@ -43,8 +43,8 @@
       "display": "短语信息",
       "type": "select",
       "options": {
-        "full": "详细解释",
-        "basic": "基本用法",
+        "full": "详细(发音/每部分释义/用法)",
+        "basic": "简略(用法/例句/相关短语)",
         "none": "仅翻译"
       }
     },
@@ -60,7 +60,7 @@
     },
     {
       "key": "destription",
-      "display": "以下部分的默认值(非必要不用更改):输出随机性(temperature)默认0.1-精准模式(最稳定) \n输出多样性(top_p)默认0.99-广泛采样 \n重复控制(frequency_penalty)默认0-默认平衡 \n内容新颖度(presence_penalty)默认0-平衡模式 \n响应长度(max_tokens)默认2000-详细解释",
+      "display": "以下部分的默认值: (下面未选择时显示的并不准确，但选择后正常，参数的具体作用见下，注意非必要不用手动选择) temperature=0.1, top_p=0.99, frequency_penalty=0, presence_penalty=0, max_tokens=2000",
       "type": "destription"
     },
     {

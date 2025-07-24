@@ -36,7 +36,7 @@
 ## ⚡ 快速开始🚀
 1. 📥 安装pot-app ([下载地址](https://github.com/pot-app/pot-app))
 2. 🔑 获取DeepSeek API密钥 ([申请地址](https://platform.deepseek.com/usage))
-3. 📦 选择本插件的发布包(potext文件)进行安装([点击下载](https://github.com/Erenind/pot-app-translate-plugin-deepseek/releases/download/v2.0.0/plugin.Erenind.deepseek.potext))
+3. 📦 选择本插件的发布包(potext文件)进行安装([点击下载](https://github.com/Erenind/pot-app-translate-plugin-deepseek/releases/download/v2.0.1/plugin.Erenind.deepseek.potext))
 4. ⚙️ 安装本插件并配置API密钥([配置选项说明](#配置选项说明))
 5. 🎉 开始享受专业英语学习体验！
 
@@ -55,9 +55,9 @@
 |--------|------|--------|------|
 | 模型选择 | deepseek-chat<br>deepseek-reasoner | deepseek-chat | DeepSeek提供的翻译模型 |
 | API密钥 | 文本输入 | 无 | 从DeepSeek平台获取的API密钥 |
-| 单词/短语信息 | 不显示<br> 基本用法<br> 完整信息(发音/释义/用法) | 完整信息(发音/释义/用法) | 控制单词/短语解释详细程度 |
+| 单词信息 | 仅翻译<br>简略(用法/例句)<br>详细(发音/释义/用法) | 详细(发音/释义/用法) | 控制单词解释详细程度 |
 | 连字符短语模式 | 禁用<br> 启用(-标识/连接短语) | 启用(-标识/连接短语) | 启用后可使用-make-it格式输入短语 |
-| 短语解释模式 | 仅翻译<br> 基本用法<br> 详细解释 | 详细解释 | 控制短语解释详细程度 |
+| 短语信息 | 仅翻译<br>简略(用法/例句/相关短语)<br>详细(发音/每部分释义/用法) | 详细(发音/每部分释义/用法) | 控制短语解释详细程度 |
 | 自定义指令模式 | 启用(可使用///指令>内容格式)<br>禁用 | 启用 | 启用后可使用自定义指令格式 |
 | 输出随机性(temperature) | 0.1 - 精准模式(最稳定)<br>0.5 - 平衡模式<br>0.8 - 创意模式<br>1.2 - 高随机性<br>1.5 - 实验性输出 | 0.1 | 控制输出的随机性 |
 | 输出多样性(top_p) | 0.9 - 精准筛选<br>0.95 - 适度多样<br>0.99 - 广泛采样<br>1.0 - 完全开放 | 0.99 | 控制输出的多样性 |

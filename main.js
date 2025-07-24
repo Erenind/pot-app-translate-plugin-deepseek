@@ -15,6 +15,13 @@ async function translate(text, from, to, options) {
         max_tokens = 2000
     } = config;
 
+    // 将info.json中的字符串转为数字
+    temperature = Number(temperature);
+    top_p = Number(top_p);
+    frequency_penalty = Number(frequency_penalty);
+    presence_penalty = Number(presence_penalty);
+    max_tokens = Number(max_tokens);
+
     // 自定义模式检测 (///指令>内容)
     const isCustomMode = config.custom_mode !== "off" && text.startsWith('///') && text.includes('>');
     let userPrompt;
